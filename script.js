@@ -47,12 +47,12 @@ async function checkWeather(cityname) {
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
-    if(data.weather[0].main == 'Clouds') weatherIcon.src = "/images/clouds.png"
-    else if(data.weather[0].main == 'Clear') weatherIcon.src = "/images/clear.png"
-    else if(data.weather[0].main == 'Rain') weatherIcon.src = "/images/rain.png"
-    else if(data.weather[0].main == 'Drizzle') weatherIcon.src = "/images/drizzle.png"
-    else if(data.weather[0].main == 'Snow') weatherIcon.src = "/images/snow.png"
-    else weatherIcon.src = "/images/mist.png"
+    if(data.weather[0].main == 'Clouds') weatherIcon.src = "images/clouds.png"
+    else if(data.weather[0].main == 'Clear') weatherIcon.src = "images/clear.png"
+    else if(data.weather[0].main == 'Rain') weatherIcon.src = "images/rain.png"
+    else if(data.weather[0].main == 'Drizzle') weatherIcon.src = "images/drizzle.png"
+    else if(data.weather[0].main == 'Snow') weatherIcon.src = "images/snow.png"
+    else weatherIcon.src = "images/mist.png"
 }
 
 checkWeather()
